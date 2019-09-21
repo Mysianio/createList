@@ -1,0 +1,68 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  background: #eee; 
+  #root{
+    margin: 0 auto;
+    width: 80vw;
+    height: 1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    > div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1{
+        font-size: 18px;
+      }
+    }
+  }
+  .createdList{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
+    .listElement{
+      height: 30px;
+      padding: 5px 10px;
+      border-bottom: 1px solid #ccc;
+      .listElementTitle{
+          font-size: 20px;
+          font-weight: 100;
+          margin: 0;
+          .sortedByTitle{
+            font-weight: 700;
+          }
+      }
+    }
+    .listLetter{
+      height: 30px;
+      position: sticky;
+      top: 0;
+      color: #fff;
+      padding: 5px 10px;
+      background: #C7C7C7;
+      background: -webkit-linear-gradient(bottom, #C7C7C7, #AAAAAA);
+      background: -moz-linear-gradient(bottom, #C7C7C7, #AAAAAA);
+      background: linear-gradient(to top, #C7C7C7, #AAAAAA);
+    }
+  }
+  .createListDarkTheme{
+    background: #293238;
+    color: #fff;
+    .listElement{
+      border-bottom: 1px solid #4c5e69;
+    }
+    .listLetter{
+      background: #36434B;
+      background: -webkit-linear-gradient(top, #36434B, #606D76);
+      background: -moz-linear-gradient(top, #36434B, #606D76);
+      background: linear-gradient(to bottom, #36434B, #606D76);
+    }
+  }
+}
