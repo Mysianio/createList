@@ -2,6 +2,8 @@ import '../style.scss';
 import listScroll from './scroll.ts';
 import sortList from './sort.ts';
 
+// Функция для создания массива элементов списка
+
 let createListElements = (DB: object[], sortedBy:string, sorted:boolean = true): any =>{
 
     let currentLetter:string;
@@ -59,6 +61,8 @@ let createListElements = (DB: object[], sortedBy:string, sorted:boolean = true):
     
     return listElements;
 }
+
+// Основная функция для создания списка
 
 let createList = (selector: string, DB: object[], sort:number = 1, theme:string = 'light', width?: number, height?: number):void =>{
 
